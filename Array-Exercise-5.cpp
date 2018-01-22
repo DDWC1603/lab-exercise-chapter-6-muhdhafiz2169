@@ -3,17 +3,28 @@
 //thank you.
 
 #include <iostream>
+#include <stdlib.h>
+
+using namespace std;
+
 int main()
 {
-	i, max=0;
-	list[100];
+	int i, max = 100, holder = 0;
+	int list[100];
 
 	//initialize the array with random values
-	for(/*i<100*/) list[i] = /*insert the random function here*/;
+	for(i = 0; i < max; i++ /*i<100*/) {
+		list[i] = rand();
+		cout << list[i] << endl;	
+	}
+	
 
-	//find the maximum val
-	for(/*i>100*/)
-		if(max<list[i]) max=list[i];
-
-	cout<<"Maximum value: "<<max;
+	//find the maximum val * comparing holder
+	for(i = 0; i < max; i++ /*i>100*/) {
+		if (list[i] >= holder) {
+			holder = list[i];
+		}
+	}
+	
+	cout << endl << "Maximum value is = " << holder;
 }
