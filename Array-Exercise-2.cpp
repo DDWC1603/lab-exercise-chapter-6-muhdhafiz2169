@@ -5,20 +5,24 @@
 using namespace std;
 
 int mark[5]={19,10,8,17,9};
-int main()
-{
+int main() {
+	int x;
+	
+	cout << "Prev Value on Xth element: " << mark[2] << endl;
+	
 	//insert different value to the third element
 	//tukar third element tu dengan value lain
-	mark[]=/*your valie*/
+	mark[2]= 23; /*your value*/
+	cout << "Current Value on Xth element: " << mark[2] << endl;
 
 	//get user input and insert sub the third element
 	//tukar the third element yang baru ditukar tu dengan input dari user
-	mark[x];
+	cout << "Value of Xth element: ";
+	cin >> x;
 
 	//print the first element of the array
-	mark[];
+	cout << "First Element: " << mark[0] << endl;
 
 	//print the ith element of the array
-	mark[x]
-
+	cout << "Xth Element: " << mark[x];
 }
